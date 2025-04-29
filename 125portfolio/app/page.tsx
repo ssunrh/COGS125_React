@@ -1,6 +1,15 @@
 'use client'
 import { useState } from 'react';
 
+export default function Home() {
+  return (
+    <main>
+      <h1>I tried following a React tutorial but I'm still having trouble getting the interactive elements to show up on the actual page...</h1>
+      <h1>Will have to slowly keep troubleshooting</h1>
+    </main>
+  )
+}
+
 function Square({value, onSquareClick }) {
   return (
     <button className="square" onClick={onSquareClick}>
