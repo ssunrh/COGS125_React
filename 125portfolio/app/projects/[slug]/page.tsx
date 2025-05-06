@@ -5,9 +5,10 @@ interface Props {
   params: Promise<{ slug: string }>
 }
 
-export default async function ProjectDetailPage({ params }: Props) {
+export default async function ProjectDetailPage(props: Props) {
+  const params = await props.params;
   const { slug } = await params;
-  const project = projects.find((p) => p.slug === params.slug);
+  const project = await projects.find((p) => p.slug === params.slug);
 
   if (!project) return notFound();
 
