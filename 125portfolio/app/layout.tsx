@@ -1,5 +1,4 @@
-// app/layout.tsx
-import './globals.css'; // Optional: Tailwind or global CSS
+import './globals.css';
 import { ReactNode } from 'react';
 import Navbar from '../components/Navbar';
 import { Afacad } from 'next/font/google';

@@ -2,11 +2,11 @@ import { projects } from '../../../data/projects';
 import { notFound } from 'next/navigation';
 import ReactMarkdown from 'react-markdown';
 
-interface Props {
+interface Promise {
   params: { slug: string };
 }
 
-export default function ProjectDetailPage({ params }: Props) {
+export default function ProjectDetailPage({ params }: Promise) {
   const project = projects.find((p) => p.slug === params.slug);
   if (!project) return notFound();
 
