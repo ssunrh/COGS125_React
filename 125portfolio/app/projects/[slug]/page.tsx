@@ -6,7 +6,7 @@ interface Props {
 }
 
 const ProjectDetailPage = ({ params }: Props) => {
-  const project = projects.find((p) => p.slug === await params.slug);
+  const project = projects.find((p) => p.slug === params.slug);
 
   if (!project) return notFound();
 
