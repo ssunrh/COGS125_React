@@ -1,14 +1,6 @@
 import { projects } from '../../../data/projects';
 import { notFound } from 'next/navigation';
 
-interface Project {
-  title: string;
-  description: string;
-  fullDescription?: string;
-  imageUrl: string;
-  link: string;
-}
-
 interface Props {
   project: Project;
 }
